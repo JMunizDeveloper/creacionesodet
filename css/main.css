@@ -26,7 +26,7 @@ body {
     margin: 10px auto;
     display: grid;
     grid-gap: 10px;
-    grid-template-rows: 120px 50px 75vh 50px;
+    grid-template-rows: auto auto 100% auto;
     grid-template-areas: "header header header"
         "navbar navbar navbar"
         "main-content main-content main-content"
@@ -95,13 +95,13 @@ body {
 .container .navbar ul li a:hover {
     background-color: rgba(213, 245, 227, 1.0);
     color: rgba(24, 106, 59, 1.0);
-    font-size: 1.4em;
     transition: 0.5s;
 }
 
 .container .navbar ul li a.active {
     background-color: rgba(213, 245, 227, 1.0);
     color: rgba(24, 106, 59, 1.0);
+    font-size: 1.4em;
 }
 
 /*Navbar Styles*/
@@ -109,7 +109,6 @@ body {
 /*Main-content Styles*/
 /*Index*/
 .container .main-content {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -122,8 +121,7 @@ body {
 
 .container .main-content h2 {
     width: 100%;
-    height: auto;
-    margin: 20px 0;
+    margin: 0;
     padding: 0;
     line-height: 50px;
     text-transform: uppercase;
@@ -150,27 +148,26 @@ body {
 /*Services*/
 .container .main-content .services-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 80%;
     height: auto;
     margin: 5% 10%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .container .main-content .service-box {
     position: relative;
-    width: 20%;
+    width: 350px;
     margin: 10px 10px;
     text-align: center;
     background-color: aquamarine;
 }
 
 
-.container .main-content .service-box:nth-child(1):hover {
+.container .main-content .service-box:hover {
     max-height: 300px;
-    background-color: white;
-    transition: height 0.8s ease;
+    background-color: #7dfbd6;
 }
 
 .container .main-content .service-box:nth-child(1):hover:after {
@@ -182,8 +179,9 @@ body {
     bottom: 0;
     width: 100%;
     height: 100%;
-    text-align: justify;
+    text-align: center;
     font-size: 1.2em;
+    color: #008080;
 }
 
 
@@ -230,31 +228,6 @@ body {
 /*footer Styles*/
 /*--------------------------------------------*/
 /*Media Queries*/
-@media screen and (min-width: 1025px) {
-    .container {
-        grid-template-rows: auto auto auto auto;
-        grid-gap: 6px;
-    }
-
-    .container h1 {
-        font-size: 1.3em;
-    }
-
-    .container .main-content .title2 {
-        font-size: 2.2em;
-    }
-
-    .container .main-content .video {
-        margin-right: 90px;
-    }
-
-    .container .main-content .index-paragraph {
-        margin: 0;
-    }
-}
-
-
-
 @media screen and (min-width: 780px) and (max-width: 1024px) {
     .container {
         width: 100%;
