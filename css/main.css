@@ -169,27 +169,6 @@ body {
     text-align: center;
 }
 
-.container .main-content .service-box:hover {
-    max-height: 300px;
-    background-color: #7dfbd6;
-}
-
-.container .main-content .service-box:nth-child(1):hover:after {
-    content: "Lorem, ipsum dolor sit amet consectetur adipisicing <br> elit. Autem explicabo eos ipsam cumque distinctio rem beatae quaerat a ab, odit voluptate. Veritatis deserunt itaque reprehenderit accusamus ex magnam placeat cumque.";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 1.2em;
-    color: #008080;
-    transform: translateY(-50%);
-    font-family: 'Sriracha', cursive;
-    line-height: 25px;
-}
-
 .container .main-content .service-box figure {
     width: 100%;
     padding: 10px 10px;
