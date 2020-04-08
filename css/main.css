@@ -26,7 +26,7 @@ body {
     margin: 10px auto;
     display: grid;
     grid-gap: 10px;
-    grid-template-rows: auto auto 100% auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: "header header header"
         "navbar navbar navbar"
         "main-content main-content main-content"
@@ -75,7 +75,7 @@ body {
 .container .navbar ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     line-height: 50px;
 }
 
@@ -126,7 +126,7 @@ body {
     line-height: 50px;
     text-transform: uppercase;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
 
 }
 
@@ -167,28 +167,56 @@ body {
 
 .container .main-content .service-box p {
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .container .main-content .service-box figure {
     width: 100%;
-    padding: 10px 10px;
-}
-
-.container .main-content .service-box:hover p,
-.container .main-content .service-box:hover figure {
-    display: none;
-    margin: 0;
+    padding: 10px 10px 0 10px;
 }
 
 .container .main-content .service-box figure img {
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.container .main-content .service-box p {
+.container .main-content .service-box .description {
+    background-color: rgba(0, 184, 148, 1.0);
+    position: absolute;
+    top: 0;
+    bottom: 90px;
+    line-height: 1;
+    padding: 10px 10px;
+    display: none;
+}
+
+.container .main-content .service-box .description p {
     font-family: 'Sriracha', cursive;
-    font-size: 2.5em;
+    font-size: 20px;
     margin: 0;
-    padding: 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container .main-content .service-box button {
+    margin: 10px 0;
+    background-color: rgba(223, 230, 233, 0.6);
+    border: 0px;
+    color: rgba(52, 73, 94, 1.0);
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Sriracha', cursive;
+    transition: 0.6s;
+}
+
+.container .main-content .service-box button:hover {
+    cursor: pointer;
+    background-color: rgba(223, 230, 233, 1.0);
+    ;
 }
 
 /*Services*/
@@ -205,7 +233,7 @@ body {
     margin: 5px 0 0 0;
     font-size: 1.2em;
     color: rgba(255, 255, 255, 1.0);
-    padding: 0;
+    padding: 5px 0;
     line-height: 15px;
     font-family: 'Sriracha', cursive;
 }
@@ -319,7 +347,6 @@ body {
     }
 
     .container .footer p {
-        color: rgba(255, 255, 255, 1.0);
         margin: 10px 0;
         padding: 0;
     }
