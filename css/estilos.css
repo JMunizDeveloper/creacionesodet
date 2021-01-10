@@ -219,10 +219,6 @@ body .gallery .swiper-container {
     height: 300px;
 }
 
-.swiper-pagination {
-    bottom: 0;
-}
-
 /*Gallery End*/
 
 /*Contact start*/
@@ -233,7 +229,7 @@ body .contact .contact_container {
     flex-wrap: wrap;
     background: rgb(84, 121, 63);
     background: linear-gradient(128deg, rgba(84, 121, 63, 1) 0%, rgba(168, 233, 148, 1) 84%);
-    height: 400px;
+    height: auto;
     text-transform: uppercase;
     padding: 30px;
     border-radius: 8%;
@@ -252,13 +248,12 @@ body .contact .contact_container .contact_info h2 {
 }
 
 body .contact .contact_container .social_net {
-    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 80%;
     align-self: center;
-    bottom: 150px;
+    margin-top: 35px;
 }
 
 body .contact .contact_container .social_net li {
@@ -335,6 +330,15 @@ body .footer div {
         margin-top: 20px;
     }
 
+    body .gallery .swiper-container {
+        width: 100%;
+        height: 400px;
+    }
+
+    body .gallery .swiper-container .swiper-wrapper .swiper-slide {
+        height: 0;
+    }
+
     body .contact .contact_container {
         flex-direction: column;
         height: auto;
@@ -344,21 +348,17 @@ body .footer div {
         flex-direction: column;
     }
 
-    body .contact .contact_container .contact_form {
-        border-left: 0;
-        padding: 0;
-        border-top: 1px solid black;
-        padding-top: 10px;
-    }
-
     body .contact .contact_container .social_net {
-        flex-direction: column;
-        position: absolute;
         bottom: 0;
         left: 45px;
-        width: auto;
-        height: 100px;
+        width: 100%;
         justify-content: space-around;
+    }
+
+    body .contact .contact_container .social_net li:hover {
+        width: 30px;
+        height: 30px;
+        transition: 0.8s;
     }
 }
 
