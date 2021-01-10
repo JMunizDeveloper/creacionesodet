@@ -4,33 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Creaciones Odet - Productos hechos con Orgullo </title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Creaciones Odet - Productos hechos con Orgullo</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <img src="./images/logo.jpg" class="logo" alt="Logo Creaciones Odet">
-            <h1>Creaciones Odet</h1>
-        </header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html" target="">Home</a></li>
-                <li><a href="services.html" target="">Servicios</a></li>
-                <li><a href="gallery.html" target="">Galería</a></li>
-                <li><a class="active" href="contact.html" target="">Contacto</a></li>
-            </ul>
-        </nav>
-        <main class="main-content">
-
-        </main>
-        <footer class="footer">
-            <p>Derechos reservados</p>
-            <p>Página diseñada y desarrollada por: Jorge Muñiz</p>
-        </footer>
-        <script src="/js/main.js"></script>
+    <header class="header">
+        <img src="/images/logo.jpg" alt="Logo">
+        <h1>Creaciones Odet</h1>
+    </header>
+    <div id="bar_container">
+        <button onclick="menutoggle()" class="menu_toggle">
+            <img src="icons/menu.svg" alt="barra menu">
+        </button>
+    </div>
+    <nav id="menu" class="menuOff">
+        <ul>
+            <li><a href="index.html">inicio</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="gallery.html">Galería</a></li>
+            <li><a href="contact.html" class="active">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="content contact">
+        <div class="contact_container">
+            <div class="contact_info">
+                <h2>Contacto</h2>
+                <p>Modista: <span>Fernanda Martínez</span></p>
+                <p>Teléfono: <span>442 788 4166</span></p>
+                <p>Correo Electrónico: creacionesodet@gmail.com<span></span></p>
+                <ul class="social_net">
+                    <li><a href="#"><img src="icons/facebook.svg" alt=""></a></li>
+                    <li><a href="#"><img src="icons/youtube.svg" alt=""></a></li>
+                    <li><a href="#"><img src="icons/whatsapp.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="contact_form">
+                <h2>Cotizaciones/Información</h2>
+                <input type="text" name="nombre" placeholder="Nombre">
+                <input type="text" name="asunto" placeholder="Asunto">
+                <input type="email" name="email" placeholder="email">
+                <textarea name="description" placeholder="Descripción"></textarea>
+                <button type="submit">Solicitar Cotización</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Derechos reservados</p>
+        <p>Diseño: Jorge Muñiz</p>
+        <div class="retribution">Iconos diseñados por <a target="_blank" href="https://www.flaticon.es/autores/pixel-perfect"
+                title="Pixel perfect">Pixel
+                perfect</a> from <a target="_blank" href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+        <div>Iconos diseñados por <a target="_blank" href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel
+                perfect</a> from <a target="_blank" href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

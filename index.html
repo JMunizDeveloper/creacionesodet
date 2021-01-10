@@ -4,59 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Creaciones Odet - Productos hechos con Orgullo </title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Creaciones Odet - Productos hechos con Orgullo</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <img src="./images/logo.jpg" class="logo" alt="Logo Creaciones Odet">
-            <h1>Creaciones Odet</h1>
-        </header>
-        <nav class="navbar">
-            <ul>
-                <li><a class="active" href="index.html" target="">Home</a></li>
-                <li><a href="services.html" target="">Servicios</a></li>
-                <li><a href="gallery.html" target="">Galería</a></li>
-                <li><a href="contact.html" target="">Contacto</a></li>
-            </ul>
-        </nav>
-        <main class="main-content">
-            <h2 class="title2">¿Qué es Creaciones Odet?</h2>
-            <video class="video" width="420" height="340" controls>
+    <header class="header">
+        <img src="/images/logo.jpg" alt="Logo">
+        <h1>Creaciones Odet</h1>
+    </header>
+    <div id="bar_container">
+        <button onclick="menutoggle()" class="menu_toggle">
+            <img src="icons/menu.svg" alt="barra menu">
+        </button>
+    </div>
+    <nav id="menu" class="menuOff">
+        <ul>
+            <li><a href="index.html" class="active">inicio</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="gallery.html">Galería</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <div class="container">
+            <video width="320" height="240" controls>
                 <source src="movie.mp4" type="video/mp4">
                 <source src="movie.ogg" type="video/ogg">
-                Your browser does not support the video tag.
             </video>
-            <p class="index-paragraph">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem explicabo eos ipsam cumque distinctio
-                rem beatae quaerat a ab, odit voluptate. Veritatis deserunt itaque reprehenderit accusamus ex magnam
-                placeat cumque.
-                Mollitia, eveniet veritatis. Quasi dolorem, facere consequatur sed cum omnis rem magni tempora minus a,
-                nemo incidunt distinctio nam saepe natus, fuga eligendi sit vitae accusantium. Cumque obcaecati
-                laboriosam earum.
-                Modi consectetur laboriosam, dolores minus eius maiores non officiis commodi, corrupti, aliquid
-                perferendis est odio sit quas! Distinctio vitae eligendi eaque, sunt cum aut vero esse perferendis,
-                consectetur maxime delectus.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, accusantium sint ullam quasi deleniti
-                reiciendis et, vero animi exercitationem, possimus quod ipsum. Ullam porro culpa inventore quis nam
-                corrupti voluptatum?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, vitae. Architecto distinctio
-                voluptatem, fuga enim quia aliquid nobis magni repudiandae? Excepturi, quas nemo! Id dolorem eum vero
-                magnam reprehenderit est?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas et sed beatae voluptatem odio, totam error
-                cumque veniam deleniti doloremque, esse hic itaque mollitia suscipit, ipsam corrupti facilis
-                exercitationem quae?
-            </p>
-        </main>
-        <footer class="footer">
-            <p>Derechos reservados</p>
-            <p>Página diseñada y desarrollada por: Jorge Muñiz</p>
-        </footer>
-    </div>
-    <script src="/js/main.js"></script>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate explicabo molestias
+                    ipsam
+                    est
+                    dolores vero sit, reiciendis autem harum.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quae consectetur culpa laboriosam
+                    possimus
+                    vero quasi laborum cumque doloribus facere!</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Derechos reservados</p>
+        <p>Diseño: Jorge Muñiz</p>
+    </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
