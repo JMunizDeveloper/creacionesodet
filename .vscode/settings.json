@@ -1,3 +1,6 @@
 {
-    "browser-preview.startUrl": "localhost:5500/"
+    "browser-preview.startUrl": "localhost:5500/",
+    "editor.formatOnSave": true,
+    "color-highlight.matchWords": true,
+    
 }

@@ -196,14 +196,13 @@ body .gallery {
 }
 
 body .gallery .swiper-container {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    width: 600px;
+    height: 300px;
 }
 
 .swiper-slide {
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     width: 300px;
     height: 300px;
     background-color: #262626;
@@ -211,12 +210,17 @@ body .gallery .swiper-container {
 
 .swiper-slide .imgBx {
     width: 100%;
-    height: 300px;
+    height: auto;
     overflow: hidden;
 }
 
 .swiper-slide .imgBx img {
-    width: 100%;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-pagination {
+    bottom: 0;
 }
 
 /*Gallery End*/
@@ -232,6 +236,8 @@ body .contact .contact_container {
     height: 400px;
     text-transform: uppercase;
     padding: 30px;
+    border-radius: 8%;
+
 }
 
 body .contact .contact_container .contact_info {
@@ -245,51 +251,27 @@ body .contact .contact_container .contact_info h2 {
     align-self: center;
 }
 
-body .contact .contact_container .contact_form {
-    display: flex;
-    flex-direction: column;
-    border-left: 1px solid black;
-    justify-content: center;
-    padding-left: 15px;
-}
-
-body .contact .contact_container .contact_form h2 {
-    padding-bottom: 10px;
-}
-
-body .contact .contact_container .contact_form input {
-    margin-bottom: 10px;
-    width: 300px;
-    border-radius: 5px;
-}
-
-body .contact .contact_container .contact_form textarea {
-    height: 150px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-body .contact .contact_container .contact_form button {
-    width: 200px;
-    align-self: center;
-    border-radius: 5px;
-    height: 50px;
-}
-
 body .contact .contact_container .social_net {
     position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 20%;
+    width: 80%;
     align-self: center;
-    bottom: 100px;
+    bottom: 150px;
 }
 
 body .contact .contact_container .social_net li {
     width: 30px;
     height: 30px;
     list-style: none;
+    transition: 0.8s;
+}
+
+body .contact .contact_container .social_net li:hover {
+    width: 40px;
+    height: 40px;
+    transition: 0.8s;
 }
 
 body .contact .contact_container .social_net li a img {
@@ -358,7 +340,7 @@ body .footer div {
         height: auto;
     }
 
-    body .contact .contact_container .contact_info{
+    body .contact .contact_container .contact_info {
         flex-direction: column;
     }
 
